@@ -227,7 +227,7 @@ drawCircles = function() {
       .attr("cy", function(d) { return y(d[yvar]); })
       .attr("r", 3)
       .attr("fill", "#fff")
-      .attr("fill-opacity", 0.3)
+      .attr("fill-opacity", 0.4)
       .on("mouseover", showTooltip)
       .on("mouseout", removeTooltip);
       
@@ -279,9 +279,9 @@ showTooltip = function(d) {
 	
 	createContent = function(d) {
 	  if (d["Remark"].length > 0) {
-	    return "<span style='font-size: 11px; text-align: center;'>" + d.Name + ", " + d.Country + "</span><br><span style='font-size: 11px; text-align: center;'>" + "Also included: " + d.Remark + "</span><br><span style='font-size: 11px; text-align: center;'>Population: " + d.PrettyPop + "(" + d.PrettyRank + ")" + "</span>";
+	    return "<span style='font-size: 11px; text-align: center;'>" + d.Name + ", " + d.Country + "</span><br><span style='font-size: 11px; text-align: center;'>" + "Also included: " + d.Remark + "</span><br><span style='font-size: 11px; text-align: center;'>Population: " + d.PrettyPop + " (" + d.PrettyRank + ")" + "</span>";
 	  } else {
-	    return "<span style='font-size: 11px; text-align: center;'>" + d.Name + ", " + d.Country + "</span><br><span style='font-size: 11px; text-align: center;'>Population: " + d.PrettyPop + "(" + d.PrettyRank + ")" + "</span>";
+	    return "<span style='font-size: 11px; text-align: center;'>" + d.Name + ", " + d.Country + "</span><br><span style='font-size: 11px; text-align: center;'>Population: " + d.PrettyPop + " (" + d.PrettyRank + ")" + "</span>";
 	  }
 	};
 	
@@ -299,7 +299,7 @@ showTooltip = function(d) {
 	$(element).popover('show');
 
 	//Make chosen circle more visible
-	element.attr("r", 6);
+	element.attr("r", 6).style("fill", "#e67300").style("fill-opacity", 0.9);
 	mapElement.style("fill", "#000");
   
 };
@@ -315,7 +315,7 @@ removeTooltip = function(d) {
 	});
 	
 	//Make chosen circle more visible
-	element.attr("r", 3);
+	element.attr("r", 3).style("fill", "#fff").style("fill-opacity", 0.4);
 	mapElement.style("fill", "#333");
 		
 };
