@@ -277,11 +277,18 @@ showTooltip = function(d) {
 	var element = d3.selectAll("circle.r" + d[idvar]);
 	var mapElement = d3.selectAll(".point.r" + d[idvar]);
 	
+	var contentLines = [
+	  "<span style='font-size: 11px; text-align: center;'><b>" + d.Name + ", " + d.Country + "</b></span><br>",
+	  "",
+	  "<span style='font-size: 11px; text-align: center;'>Population: <b>" + d.PrettyPop + " (" + d.PrettyRank + ")" + "</b></span>"
+	];
+	
 	createContent = function(d) {
 	  if (d["Remark"].length > 0) {
-	    return "<span style='font-size: 11px; text-align: center;'>" + d.Name + ", " + d.Country + "</span><br><span style='font-size: 11px; text-align: center;'>" + "Also included: " + d.Remark + "</span><br><span style='font-size: 11px; text-align: center;'>Population: " + d.PrettyPop + " (" + d.PrettyRank + ")" + "</span>";
+	    contentLines[1] = "<span style='font-size: 11px; text-align: center;'>" + "Also included: <b>" + d.PrettyRemark + "</b></span><br>";
+	    return contentLines;
 	  } else {
-	    return "<span style='font-size: 11px; text-align: center;'>" + d.Name + ", " + d.Country + "</span><br><span style='font-size: 11px; text-align: center;'>Population: " + d.PrettyPop + " (" + d.PrettyRank + ")" + "</span>";
+	    return contentLines;
 	  }
 	};
 	
@@ -330,6 +337,7 @@ objConvert = function(d) {
     Remark: d.Remark,
     PrettyPop: d.PrettyPop,
     PrettyRank: d.PrettyRank,
+    PrettyRemark: d.PrettyRemark,
     lat: +d.lat,
     lon: +d.lon,
     id: +d.id

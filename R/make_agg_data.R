@@ -29,7 +29,8 @@ aggData <- make_once("data/aggData", function() {
   aggData <- aggData[, ":=" (Status = NULL,
                              PrettyPop = prettyNum(Population, big.mark = ","),
                              PrettyRank = sapply(Rank, rank_convert),
-                             id = 1:nrow(aggData)
+                             id = 1:nrow(aggData),
+                             PrettyRemark = tstrsplit(Remark, split = "incl. ")[[2]]
                              )]
   
   aggData[Name == "Taibei", ":=" (lat = 25.0855451, lon = 121.4932093)]
