@@ -277,15 +277,23 @@ showTooltip = function(d) {
 	var element = d3.selectAll("circle.r" + d[idvar]);
 	var mapElement = d3.selectAll(".point.r" + d[idvar]);
 	
+	createContent = function(d) {
+	  if (d["Remark"].length > 0) {
+	    return "<span style='font-size: 11px; text-align: center;'>" + d.Name + ", " + d.Country + "</span><br><span style='font-size: 11px; text-align: center;'>" + "Also included: " + d.Remark + "</span><br><span style='font-size: 11px; text-align: center;'>Population: " + d.PrettyPop + "(" + d.PrettyRank + ")" + "</span>";
+	  } else {
+	    return "<span style='font-size: 11px; text-align: center;'>" + d.Name + ", " + d.Country + "</span><br><span style='font-size: 11px; text-align: center;'>Population: " + d.PrettyPop + "(" + d.PrettyRank + ")" + "</span>";
+	  }
+	};
+	
+	var contentString = createContent(d);
+	
 	//Define and show the tooltip
 	$(element).popover({
 		placement: 'auto top',
 		container: '#circles',
 		trigger: 'manual',
 		html : true,
-		content: function() { 
-			return "<span style='font-size: 11px; text-align: center;'>" + d.Name + ", " + d.Country + "</span><br><span style='font-size: 11px; text-align: center;'>" + "Also included: " + d.Remark + "</span><br><span style='font-size: 11px; text-align: center;'>Population: " + d.PrettyPop + "(" + d.PrettyRank + ")" + "</span>";
-		}
+		content: contentString
 	});
 	
 	$(element).popover('show');
