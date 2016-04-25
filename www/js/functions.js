@@ -79,7 +79,7 @@ drawMap = function() {
       .translate([width / 2, height / 2])
       .scale(scale)
       .precision(0.1)
-      .rotate([-90, -20])
+      .rotate([-60, -10, 20])
       .clipAngle(90);
   
   path = d3.geo.path()
