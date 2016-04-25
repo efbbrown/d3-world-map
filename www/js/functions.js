@@ -183,8 +183,9 @@ drawCircles = function() {
   
   var parent = circlesParent;
   
-  var parentDiv, parentWidth, parentHeight, margin, width, height, projection,
-      path, svg, chart, graticule, zoom, countries, cicrle;
+  var yvar = "Population";
+  
+  var parentDiv, parentWidth, parentHeight, margin, width, height, chart, x, y;
   
   /*------------------------------------------*/
   /*            Initiate the SVG              */
@@ -196,39 +197,52 @@ drawCircles = function() {
       parentHeight = g3.elementHeight(parentDiv);
   
   margin = {
-    top: parentHeight * 0.01, right: parentWidth * 0.01,
-    bottom: parentHeight * 0.01, left: parentWidth * 0.01
+    top: parentHeight * 0.1, right: parentWidth * 0.01,
+    bottom: parentHeight * 0.1, left: parentWidth * 0.01
   };
   
   width = g3.chartLength(parentWidth, margin.left, margin.right);
   height = g3.chartLength(parentHeight, margin.top, margin.bottom);
   
-  svg = parentDiv.append("svg")
-      .attr("width", width)
-      .attr("height", height)
-      .attr("viewBox", "0, 0, " + width + ", "  + height);
+  chart = g3.appendChart(parentDiv, parentWidth, parentHeight, margin);
   
-  chart = svg.append("g");
+  x = g3.scale({type: "linear", "min": 0, "max": width}),
+  y = g3.scale({type: "linear", "min": height, "max": 0});
   
-  var x = g3.scale({type: "linear", "min": 0, "max": width}),
-      y = g3.scale({type: "linear", "min": height, "max": 0});
+  y.domain(d3.extent(data, function(d) { return d[yvar]; }));
   
   /*------------------------------------------*/
   /*            Draw elements                 */
   /*------------------------------------------*/
-    
-  var xvar = "lon", yvar = "Population", rvar = "Population";
   
-  chart.selectAll("path.point")
+  chart.selectAll("circle")
       .data(data)
-      .enter().append("path")
+      .enter().append("circle")
       .attr("class", function(d) { return "point r" + d.Rank; })
-      .datum(function(d) {
-        return circle
-            .origin([d[xvar], d[yvar]])
-            .angle(d[rvar]/6000000)();
-      })
-      .attr("d", path);
+      .attr("cx", 25)
+      .attr("cy", function(d) { return y(d[yvar]); })
+      .attr("r", 3)
+      .attr("fill", "#fff")
+      .attr("fill-opacity", 0.3);
+  
+};
+
+drawCharts = function() {
+  drawMap();
+  drawCircles();
+};
+
+redrawCircles = function() {
+  
+  d3.select(circlesParent + " *").remove();
+  
+  minWidthHeight = Math.min(window.innerWidth, window.innerHeight - 50);
+ 
+    $(circlesParent).css({
+        height: minWidthHeight + "px"
+    });
+  
+  drawCircles();
   
 }
 
@@ -239,7 +253,7 @@ redrawMap = function() {
   minWidthHeight = Math.min(window.innerWidth, window.innerHeight - 50);
  
     $(mapParent).css({
-        width: minWidthHeight + "px",
+        width: minWidthHeight - 50 + "px",
         height: minWidthHeight + "px"
     });
   

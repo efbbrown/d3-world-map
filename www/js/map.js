@@ -96,7 +96,7 @@ appendContainers();
 /*            Read data, render elements    */
 /*------------------------------------------*/
 
-d3_queue.queue()
+var q = d3_queue.queue()
   .defer(function(url, callback) {
     d3.csv(url, function(error, table) {
       data = table;
@@ -108,8 +108,10 @@ d3_queue.queue()
       world = json;
       callback(error, json);
     });
-  }, "data/world-110m.json")
-  .await(drawMap);
+  }, "data/world-110m.json");
+
+q.await(drawCharts);
+//q.await(drawCircles);
 
 /*------------------------------------------*/
 /*            On resize, recalc & redraw    */
@@ -119,6 +121,8 @@ $(window).on("resize orientationchange", function () {
     
     appendContainers();
  
-    redrawMap("#chart");
+    redrawMap();
+    
+    redrawCircles();
  
 });
