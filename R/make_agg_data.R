@@ -8,6 +8,8 @@ aggData <- make_once("data/aggData", function() {
   
   aggData <- fread("data/agglomerationData.csv")
   
+  setnames(aggData, "English Name", "EnglishName")
+  
   source("R/geocode_data.R")
   
   aggData <- cbind(aggData, locations)
@@ -29,6 +31,11 @@ aggData <- make_once("data/aggData", function() {
                              PrettyRank = sapply(Rank, rank_convert),
                              id = 1:nrow(aggData)
                              )]
+  
+  aggData[Name == "Taibei", ":=" (lat = 25.0855451, lon = 121.4932093)]
+  aggData[Name == "Gaoxiong", ":=" (lat = 22.9740475, lon = 120.332213)]
+  aggData[EnglishName == "Kathmandu", ":=" (lat = 27.7090319, lon = 85.2911134)]
+  aggData[Name == "Tainan", ":=" (lat = 23.1508776, lon = 120.2057851)]
   
   return(aggData)
   

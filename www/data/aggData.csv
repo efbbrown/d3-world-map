@@ -1,4 +1,4 @@
-"","Rank","Name","English Name","Country","Population","Remark","lon","lat","PrettyPop","PrettyRank","id"
+"","Rank","Name","EnglishName","Country","Population","Remark","lon","lat","PrettyPop","PrettyRank","id"
 "1",1,"Guangzhou","Canton","China",47700000,"Northern Pearl River Delta; incl. Dongguan, Foshan, Jiangmen, Shenzhen, Zhongshan",113.264385,23.12911,"47,700,000","1st",1
 "2",2,"Tōkyō","Tokyo","Japan",39500000,"incl. Chiba, Kawasaki, Maebashi, Sagamihara, Saitama, Utsunomiya, Yokohama",139.7319925,35.7090259,"39,500,000","2nd",2
 "3",3,"Shanghai","Shanghai","China",30900000,"incl. Suzhou",121.473701,31.230416,"30,900,000","3rd",3
@@ -38,7 +38,7 @@
 "37",37,"Chicago","Chicago","United States of America",9800000,"",-87.6297982,41.8781136,"9,800,000","37th",37
 "38",38,"Chengdu","Chengtu","China",9600000,"incl. Shuangliu",104.066801,30.572816,"9,600,000","38th",38
 "39",39,"Bogotá","Bogotá","Colombia",9350000,"",-74.072092,4.7109886,"9,350,000","39th",39
-"40",40,"Taibei","Taipei","Taiwan (Rep. of China)",9050000,"incl. Taoyuan, New Taipei City (Xinbei)",NA,NA,"9,050,000","40th",40
+"40",40,"Taibei","Taipei","Taiwan (Rep. of China)",9050000,"incl. Taoyuan, New Taipei City (Xinbei)",121.4932093,25.0855451,"9,050,000","40th",40
 "41",41,"Hyderābād","Hyderabad","India",9000000,"",78.486671,17.385044,"9,000,000","41st",41
 "42",42,"Washington","Washington","United States of America",8350000,"incl. Baltimore",-77.0368707,38.9071923,"8,350,000","42nd",42
 "43",43,"Hangzhou","Hangchou","China",8300000,"incl. Shaoxing",120.15507,30.274085,"8,300,000","43rd",43
@@ -176,10 +176,10 @@
 "175",175,"Abuja","Abuja","Nigeria",2825000,"",7.398574,9.0764785,"2,825,000","175th",175
 "176",175,"Douala","Douala","Cameroon",2825000,"",9.7678687,4.0510564,"2,825,000","175th",176
 "177",175,"P'yŏngyang","Pyongyang","Korea (North)",2825000,"",125.7295974,39.0386891,"2,825,000","175th",177
-"178",178,"Gaoxiong","Kaohsiung","Taiwan (Rep. of China)",2800000,"",NA,NA,"2,800,000","178th",178
+"178",178,"Gaoxiong","Kaohsiung","Taiwan (Rep. of China)",2800000,"",120.332213,22.9740475,"2,800,000","178th",178
 "179",178,"Huizhou","Huizhou","China",2800000,"",114.415801,23.112257,"2,800,000","178th",179
 "180",180,"Indore","Indore","India",2775000,"",75.8577258,22.7195687,"2,775,000","180th",180
-"181",180,"Kāṭhmāḍaũ","Kathmandu","Nepal",2775000,"",NA,NA,"2,775,000","180th",181
+"181",180,"Kāṭhmāḍaũ","Kathmandu","Nepal",2775000,"",85.2911134,27.7090319,"2,775,000","180th",181
 "182",182,"Daegu","Taegu","Korea (South)",2750000,"",128.601445,35.8714354,"2,750,000","182nd",182
 "183",182,"Eṣfahān","Isfahan","Iran",2750000,"",51.6679826,32.6546275,"2,750,000","182nd",183
 "184",182,"Hamburg","Hamburg","Germany",2750000,"",9.9936818,53.5510846,"2,750,000","182nd",184
@@ -405,7 +405,7 @@
 "404",404,"Adelaide","Adelaide","Australia",1300000,"",138.5999594,-34.9286212,"1,300,000","404th",404
 "405",404,"Dhanbād","Dhanbad","India",1300000,"",86.4303859,23.7956531,"1,300,000","404th",405
 "406",404,"Harrisburg","Harrisburg","United States of America",1300000,"incl. Lancaster, York",-76.8867008,40.2731911,"1,300,000","404th",406
-"407",404,"Tainan","Tainan","Taiwan (Rep. of China)",1300000,"",NA,NA,"1,300,000","404th",407
+"407",404,"Tainan","Tainan","Taiwan (Rep. of China)",1300000,"",120.2057851,23.1508776,"1,300,000","404th",407
 "408",404,"Torreón","Torreón","Mexico",1300000,"",-103.4067861,25.5428443,"1,300,000","404th",408
 "409",404,"Ulaanbaatar","Ulan Bator","Mongolia",1300000,"",106.9057439,47.8863988,"1,300,000","404th",409
 "410",404,"Xinxiang","Xinxiang","China",1300000,"",113.927016,35.303136,"1,300,000","404th",410
