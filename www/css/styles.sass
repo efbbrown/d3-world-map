@@ -1,0 +1,54 @@
+@import 'constants'
+
+@import 'bourbon/bourbon'
+@import 'neat/neat'
+
+
+html, body
+  height: 100%
+  width: 100%
+  margin: auto
+  background-color: $chart-background
+  font-family: Helvetica Neue, Helvetica
+body
+  .navbar
+    .navbar-brand
+      font-size: 22px
+      position: absolute
+      bottom: 0
+    .link-icon
+      height: 20px
+    .right
+      float: right
+  #container
+    top: $navbar-height
+    position: absolute
+    #circles
+      display: inline-block
+      float: left
+      background-color: $chart-background
+    #chart
+      display: inline-block
+      float: left
+      background-color: $chart-background
+      path
+        fill: $ocean-fill
+        stroke: $background-stroke
+      path.graticule
+        fill: $ocean-fill
+        stroke: $graticule-stroke
+      path.overlay
+        fill: $country-fill
+        stroke: $country-stroke
+      path.point
+        fill: $circle-fill
+        fill-opacity: $circle-opacity
+        stroke: $circle-stroke
+        stroke-opacity: $circle-opacity
+    #legend
+      float: right
+      stroke: none
+      color: $text-colour
+      fill: $text-colour
+      a
+        color: #666

@@ -1,0 +1,93 @@
+"","Rank","City","Population","Definition","Total_area_km","Population_density_km","Country","Density_Group","lon","lat"
+"1",1,"Shanghai",24256800,"Municipality",6340,3826,"China",2,121.473701,31.230416
+"2",2,"Karachi",23500000,"Metropolitan Corporation",3527,6663,"Pakistan",3,67.0099388,24.8614622
+"3",3,"Beijing",21516000,"Municipality",16410,1311,"China",1,116.407395,39.904211
+"4",4,"Lagos",21324000,"Local Government Areas",1171,18206,"Nigeria",4,3.3792057,6.5243793
+"5",5,"Delhi",16787941,"National Capital Territory",1483,11320,"India",4,77.2090212,28.6139391
+"6",6,"Tianjin",15200000,"Municipality",11760,1293,"China",1,117.200983,39.084158
+"7",7,"Istanbul",14160467,"Metropolitan Municipality",5461,2593,"Turkey",2,28.9783589,41.0082376
+"8",8,"Tokyo",13297629,"City prefecture",2189,6075,"Japan",3,139.7319925,35.7090259
+"9",9,"Guangzhou",13080500,"Sub-provincial City",7434,1759,"China",1,113.264385,23.12911
+"10",10,"Mumbai",12478447,"Municipal Corporation",603,20680,"India",4,72.8776559,19.0759837
+"11",11,"Moscow",12197596,"Federal City",2510,4859,"Russia",3,37.6173,55.755826
+"12",12,"São Paulo",11895893,"Municipality City",1521,7821,"Brazil",3,-46.6333094,-23.5505199
+"13",13,"Shenzhen",10467400,"Sub-provincial City",1991,5256,"China",3,114.057865,22.543096
+"14",14,"Jakarta",10075310,"Capital Region – Five Kota",664,15171,"Indonesia",4,106.845599,-6.2087634
+"15",15,"Seoul",10048850,"Special City",605,17134,"South Korea",4,126.9779692,37.566535
+"16",16,"Kinshasa",9735000,"Metropolitan Municipality-Province",1117,8710,"Democratic Republic of the Congo",3,15.2662931,-4.4419311
+"17",17,"Cairo",9278441,"Governorate",3085,3008,"Egypt",2,31.2357116,30.0444196
+"18",18,"Lahore",6318745,"City District",1772,3566,"Pakistan",2,74.3571581,31.5546061
+"19",19,"Mexico City",8874724,"Federal District",1485,5974,"Mexico",3,-99.133208,19.4326077
+"20",20,"Lima",8693387,"Metropolitan Municipality-Province",2672,3253,"Peru",2,-77.0427934,-12.046374
+"21",21,"New York City",8550405,"City",783,10908,"United States",4,-74.0059413,40.7127837
+"22",22,"London",8538689,"Greater London Authority",1572,5431,"United Kingdom",3,-0.1277583,51.5073509
+"23",23,"Bengaluru",8425970,"Municipal Corporation",709,11876,"India",4,77.5945627,12.9715987
+"24",24,"Bangkok",8280925,"Metropolitan Municipality-Province",1568,5279,"Thailand",3,100.5017651,13.7563309
+"25",25,"Ho Chi Minh City",8224400,"Metropolitan Municipality-Province",2095,3925,"Vietnam",2,106.6296638,10.8230989
+"26",26,"Dongguan",8220207,"Prefecture-level City",2469,3329,"China",2,113.7518,23.020673
+"27",27,"Chongqing",8189800,"Central Chongqing
+Municipality",5473,1496,"China",1,106.551556,29.56301
+"28",28,"Nanjing",8187828,"Sub-provincial City",4713,1737,"China",1,118.796877,32.060255
+"29",29,"Tehran",8154051,"City Municipality",686,11886,"Iran",4,51.3889736,35.6891975
+"30",30,"Shenyang",8106171,"Sub-provincial City",12942,626,"China",1,123.431472,41.805699
+"31",31,"Bogotá",7776845,"Capital District",859,9052,"Colombia",3,-74.072092,4.7109886
+"32",32,"Ningbo",7605689,"Sub-provincial city",9816,775,"China",1,121.54399,29.868336
+"33",33,"Hong Kong",7298600,"Special Administrative Region",1104,6608,"China",3,114.109497,22.396428
+"34",34,"Hanoi",7232700,"Metropolitan Municipality-Province",3324,2176,"Vietnam",1,105.8341598,21.0277644
+"35",35,"Baghdad",7180889,"Metropolitan Municipality-Province",4555,1576,"Iraq",1,44.3614875,33.3128057
+"36",36,"Changsha",7044118,"Prefecture-level City",11819,596,"China",1,112.938814,28.228209
+"37",37,"Dhaka",6970105,"City Corporation",153,45307,"Bangladesh",4,90.4125181,23.810332
+"38",38,"Wuhan",6886253,"Sub-provincial City",1327,5187,"China",3,114.305393,30.593099
+"39",39,"Hyderabad",6809970,"Municipal Corporation",621,10958,"India",4,78.486671,17.385044
+"40",40,"Rio de Janeiro",6429923,"Municipality City",1200,5357,"Brazil",3,-43.1728965,-22.9068467
+"41",41,"Faisalabad",6418745,"City District",214,29907,"Pakistan",4,73.0791073,31.4187142
+"42",42,"Foshan",6151622,"Prefecture-level City",2034,3023,"China",2,113.121436,23.021479
+"43",43,"Zunyi",6127009,"Prefecture-level city",30763,199,"China",1,106.927389,27.725654
+"44",44,"Santiago",5743719,"Metropolitan Municipality-Province",1249,4595,"Chile",2,-70.6692655,-33.4488897
+"45",45,"Riyadh",5676621,"Municipality City",1233,4600,"Saudi Arabia",2,46.6752957,24.7135517
+"46",46,"Ahmedabad",5570585,"Municipal Corporation",475,11728,"India",4,72.5713621,23.022505
+"47",47,"Singapore",5535000,"City State",719,7697,"Singapore",3,103.8677444,1.3553794
+"48",48,"Shantou",5391028,"Prefecture-level City",2064,2611,"China",2,116.681972,23.354091
+"49",49,"Yangon",5214000,"Metropolitan Municipality-Province",598,8708,"Myanmar",3,96.195132,16.8660694
+"50",50,"Saint Petersburg",5191690,"Federal City",1439,3608,"Russia",2,30.3350986,59.9342802
+"51",51,"Chennai",4792949,"Municipal Corporation",426,11238,"India",4,80.2707184,13.0826802
+"52",52,"Abidjan",4765000,"Department/City District",2119,2249,"Ivory Coast",1,-4.0082563,5.3599517
+"53",53,"Chengdu",4741929,"Sub-provincial City",421,11263,"China",4,104.066801,30.572816
+"54",54,"Alexandria",4616625,"Governorate",2300,2007,"Egypt",1,29.9187387,31.2000924
+"55",55,"Kolkata",4486679,"Municipal Corporation",200,22355,"India",4,88.363895,22.572646
+"56",56,"Ankara",4470800,"Metropolitan Municipality-Province",1910,2340,"Turkey",1,32.8597419,39.9333635
+"57",57,"Xi'an",4467837,"Sub-provincial City",832,5369,"China",3,108.93977,34.341575
+"58",58,"Surat",4462002,"Municipal Corporation",326,13666,"India",4,72.8310607,21.1702401
+"59",59,"Johannesburg",4434827,"Municipality City",1644,2696,"South Africa",2,28.0473051,-26.2041028
+"60",60,"Dar es Salaam",4364541,"Metropolitan Municipality-Province",1631,2676,"Tanzania",2,39.2083284,-6.792354
+"61",61,"Suzhou",4327066,"Prefecture-level City",1649,2623,"China",2,120.58529,31.298979
+"62",62,"Harbin",4280701,"Sub-provincial City",1718,2491,"China",1,126.534967,45.803775
+"63",63,"Giza",4239988,"Governorate",289,14667,"Egypt",4,31.2088526,30.0130557
+"64",64,"Zhengzhou",4122087,"Sub-provincial City",1015,4059,"China",2,113.625328,34.746611
+"65",65,"New Taipei City",3954929,"Special Municipality",2052,1927,"Taiwan",1,121.4627868,25.0169826
+"66",66,"Los Angeles",3884307,"Municipality City",1213,3200,"United States",2,-118.2436849,34.0522342
+"67",67,"Cape Town",3740026,"Municipality City",2444,1530,"South Africa",1,18.4240553,-33.9248685
+"68",68,"Yokohama",3680267,"Municipality City",437,8414,"Japan",3,139.6380256,35.4437078
+"69",69,"Busan",3590101,"Municipality City",766,4686,"South Korea",2,129.0756416,35.1795543
+"70",70,"Hangzhou",3560391,"Sub-provincial City",728,4889,"China",3,120.15507,30.274085
+"71",71,"Xiamen",3531347,"Sub-provincial City",1699,2078,"China",1,118.089425,24.479834
+"72",72,"Quanzhou",3520846,"Prefecture-level City",1062,3315,"China",2,118.675676,24.874132
+"73",73,"Berlin",3517424,"City State",891,3944,"Germany",2,13.404954,52.5200066
+"74",74,"Rawalpindi",3510000,"City District",127,27638,"Pakistan",4,73.0441352,33.598394
+"75",75,"Jeddah",3456259,"Municipality City",1765,1958,"Saudi Arabia",1,39.2375507,21.2854067
+"76",76,"Durban",3442361,"Municipality City",2291,1502,"South Africa",1,31.0218404,-29.8586804
+"77",77,"Hyderabad",3429471,"City District",114,30083,"Pakistan",4,68.3693897,25.3817509
+"78",78,"Kabul",3414100,"Municipality City",275,12415,"Afghanistan",4,69.207486,34.5553494
+"79",79,"Casablanca",3359818,"Prefecture",195,17168,"Morocco",4,-7.5898434,33.5731104
+"80",80,"Hefei",3352076,"Prefecture-level City",838,3998,"China",2,117.227219,31.820592
+"81",81,"Pyongyang",3255388,"Direct-controlled Municipality",2113,1541,"North Korea",1,125.7625241,39.0392193
+"82",82,"Madrid",3207247,"Municipality City",605,5294,"Spain",3,-3.7037902,40.4167754
+"83",83,"Peshawar",3201000,"Municipal Corporation",125,25608,"Pakistan",4,71.5804899,34.0149748
+"84",84,"Ekurhuleni",3178470,"Municipality City",1975,1609,"South Africa",1,28.3461948,-26.1777025
+"85",85,"Nairobi",3138369,"Capital District",694,4829,"Kenya",2,36.8219462,-1.2920659
+"86",86,"Zhongshan",3121275,"Prefecture-level City",1783,1750,"China",1,113.392725,22.516999
+"87",87,"Pune",3115431,"Municipal Corporation",450,6913,"India",3,73.8567437,18.5204303
+"88",88,"Addis Ababa",3103673,"Metropolitan Municipality-Province",526,5889,"Ethiopia",3,38.7577605,8.9806034
+"89",89,"Jaipur",3073350,"Municipal Corporation",485,6337,"India",3,75.7872709,26.9124336
+"90",90,"Buenos Aires",3054300,"Federal District",203,15046,"Argentina",4,-58.3815591,-34.6036844
+"91",91,"Wenzhou",3039439,"Prefecture-level City",1187,2559,"China",2,120.699362,27.993828

@@ -2,3 +2,13 @@
 .Rhistory
 .RData
 .Ruserdata
+www/css/.sass-cache
+www/css/bourbon
+www/css/neat
+www/css/test.css
+R/make_data.R
+data/data.rds
+data/List_of_cities_proper_by_population1.csv
+ui-dep.R
+prepros.cfg
+styles-not-scss.css

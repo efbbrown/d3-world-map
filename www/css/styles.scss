@@ -1,0 +1,78 @@
+$font-color: #333;
+$background-color: #fcfcfc;
+
+$p-font-size: 1rem;
+
+html, body {
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  background-color: $background-color;
+  color: $font-color;
+  font-size: 14px;
+  margin: auto;
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+.jumbotron {
+  background-color: $background-color;
+}
+
+$chart-width: 1200px;
+$chart-height: $chart-width * 0.6;
+
+$line-stroke: #333;
+
+#chart {
+  width: $chart-width;
+  height: $chart-height;
+  margin: auto;
+}
+
+$axis-color: #999;
+
+.axis path, .axis line {
+  fill: none;
+  stroke: $axis-color;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: $p-font-size * 0.8;
+}
+
+.line { 
+    stroke: $line-stroke;
+    stroke-width: 1;
+    fill: none;
+}
+
+text {
+	font-size: $p-font-size;
+	stroke: none;
+	fill: $font-color;
+}
+
+text.chart-text {
+  font-size: $p-font-size * 0.85;
+  stroke: none;
+  font-family: monospace
+}
+
+#chart .chart-line, #chart .stPath {
+  fill: none;
+}
+
+$button-color: #ccc;
+
+.button {
+  font-size: 1rem;
+  padding: 0.6rem;
+  width: 120px;
+  cursor: pointer;	
+  margin: auto;	
+  text-align: center;
+  background-color: $button-color;
+  border: 1px solid $button-color;
+  display: inline-block;
+}
