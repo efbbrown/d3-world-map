@@ -8,7 +8,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: auto;
-  background-color: #080127;
+  background-color: #03000e;
   font-family: Helvetica Neue, Helvetica; }
 
 body .navbar .navbar-brand {
@@ -25,11 +25,11 @@ body #container {
   body #container #circles {
     display: inline-block;
     float: left;
-    background-color: #080127; }
+    background-color: #03000e; }
   body #container #chart {
     display: inline-block;
     float: left;
-    background-color: #080127; }
+    background-color: #03000e; }
     body #container #chart path {
       fill: #eee;
       stroke: #242170; }
