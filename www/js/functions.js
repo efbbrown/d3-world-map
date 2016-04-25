@@ -121,13 +121,17 @@ drawMap = function() {
   chart.selectAll("path.point")
       .data(data)
       .enter().append("path")
-      .attr("class", function(d) { return "point r" + d.Rank; })
+      .attr("class", function(d) { return "point r" + d[idvar]; })
       .datum(function(d) {
-        return circle
+        return $.extend(circle
             .origin([d[xvar], d[yvar]])
-            .angle(d[rvar]/6000000)();
+            .angle(d[rvar]/6000000)(),
+            d
+            );
       })
-      .attr("d", path);
+      .attr("d", path)
+      .on("mouseover", showTooltip)
+      .on("mouseout", removeTooltip);
   
   function drawFeatureSet(className, featureSet) {
     
@@ -206,8 +210,8 @@ drawCircles = function() {
   
   chart = g3.appendChart(parentDiv, parentWidth, parentHeight, margin);
   
-  x = g3.scale({type: "linear", "min": 0, "max": width}),
-  y = g3.scale({type: "linear", "min": height, "max": 0});
+  x = g3.scale({type: "linear", min: 0, max: width}),
+  y = g3.scale({type: "linear", min: height, max: 0});
   
   y.domain(d3.extent(data, function(d) { return d[yvar]; }));
   
@@ -215,16 +219,22 @@ drawCircles = function() {
   /*            Draw elements                 */
   /*------------------------------------------*/
   
-  chart.selectAll("circle")
+  chart.append("g.circleGroup").selectAll("circle")
       .data(data)
       .enter().append("circle")
-      .attr("class", function(d) { return "point r" + d.Rank; })
-      .attr("cx", 25)
+      .attr("class", function(d) { return "circle r" + d[idvar]; })
+      .attr("cx", 15)
       .attr("cy", function(d) { return y(d[yvar]); })
       .attr("r", 3)
       .attr("fill", "#fff")
-      .attr("fill-opacity", 0.3);
-  
+      .attr("fill-opacity", 0.3)
+      .on("mouseover", showTooltip)
+      .on("mouseout", removeTooltip);
+      
+  /*------------------------------------------*/
+  /*            Voronoi                       */
+  /*------------------------------------------*/ 
+
 };
 
 drawCharts = function() {
@@ -258,5 +268,63 @@ redrawMap = function() {
     });
   
   drawMap();
+  
+};
+
+// From http://bl.ocks.org/nbremer/801c4bb101e86d19a1d0
+showTooltip = function(d) {
+  
+	var element = d3.selectAll("circle.r" + d[idvar]);
+	var mapElement = d3.selectAll(".point.r" + d[idvar]);
+	
+	//Define and show the tooltip
+	$(element).popover({
+		placement: 'auto top',
+		container: '#circles',
+		trigger: 'manual',
+		html : true,
+		content: function() { 
+			return "<span style='font-size: 11px; text-align: center;'>" + d.Name + ", " + d.Country + "</span><br><span style='font-size: 11px; text-align: center;'>" + "Also included: " + d.Remark + "</span><br><span style='font-size: 11px; text-align: center;'>Population: " + d.PrettyPop + "(" + d.PrettyRank + ")" + "</span>";
+		}
+	});
+	
+	$(element).popover('show');
+
+	//Make chosen circle more visible
+	element.attr("r", 6);
+	mapElement.style("fill", "#000");
+  
+};
+
+removeTooltip = function(d) {
+
+	var element = d3.selectAll(".circle.r" + d[idvar]);
+	var mapElement = d3.selectAll(".point.r" + d[idvar]);
+	
+	//Hide tooltip
+	$('.popover').each(function() {
+		$(this).remove();
+	});
+	
+	//Make chosen circle more visible
+	element.attr("r", 3);
+	mapElement.style("fill", "#333");
+		
+};
+
+objConvert = function(d) {
+  
+  return {
+    Rank: +d.Rank,
+    Name: d.Name,
+    Population: +d.Population,
+    Country: d.Country,
+    Remark: d.Remark,
+    PrettyPop: d.PrettyPop,
+    PrettyRank: d.PrettyRank,
+    lat: +d.lat,
+    lon: +d.lon,
+    id: +d.id
+  };
   
 };

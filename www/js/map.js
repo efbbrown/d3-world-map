@@ -3,7 +3,7 @@
 /*------------------------------------------*/
 
 // constant variables
-var data, world,
+var data, world, idvar = "id",
     mapParent = "#chart",
     circlesParent = "#circles",
     aspectRatio = 1,
@@ -49,7 +49,7 @@ function appendContainers() {
   var legendStyles = {"font-size": 14 + "px", padding: "2em 2em"};//, "border": "1px solid #fff"};
   
   var titleStyles = {"font-size": 28 + "px", "padding": "20px 0", "border-bottom": "1px solid #fff"},
-      titleText = "Populous Urban Clusters";
+      titleText = "Populous City Clusters";
   
   var paragraphStyles = {"padding": "20px 0", "border-bottom": "1px solid #fff"},
       paragraphText = "Visualised on this globe is every urban agglomeration with a population over 1,000,000 people.<br><br>Circles are sized by population.<br><br>Hover for information, click on a country to focus it in the globe, scroll to zoom, drag to pan.";
@@ -99,7 +99,7 @@ appendContainers();
 var q = d3_queue.queue()
   .defer(function(url, callback) {
     d3.csv(url, function(error, table) {
-      data = table;
+      data = table.map(objConvert);
       callback(error, table);
     });
   }, "data/aggData.csv")
