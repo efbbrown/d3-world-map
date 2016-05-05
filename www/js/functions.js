@@ -151,29 +151,7 @@ drawMap = function() {
         .attr("d", path);
     
     set.append("path.overlay")
-    .attr("d", path)
-    .on("click", function(d) {
-      rotateToFocusOn(d);
-    });
-    
-  }
-  
-  function rotateToFocusOn(x) {
-    
-    var coords = d3.geo.centroid(x);
-    coords[0] = -coords[0];
-    coords[1] = -coords[1];
-    
-    d3.transition()
-        .duration(1250)
-        .tween("rotate", function() {
-          var r = d3.interpolate(projection.rotate(), coords);
-          return function(t) {
-            projection.rotate(r(t));
-            svg.selectAll("path").attr("d", path);
-          };
-        })
-        .transition();
+    .attr("d", path);
     
   }
   

@@ -52,7 +52,7 @@ function appendContainers() {
       titleText = "Populous City Clusters";
   
   var paragraphStyles = {"padding": "20px 0", "border-bottom": "1px solid #fff"},
-      paragraphText = "Visualised on this globe is every urban agglomeration with a population over 1,000,000 people.<br><br>Circles are sized by population.<br><br>Hover for information, click on a country to focus it in the globe, scroll to zoom, drag to pan.";
+      paragraphText = "Visualised on this globe is every urban agglomeration with a population over 1,000,000 people.<br><br>Circles are sized by population.<br><br>Hover over a circle for information, scroll on the globe to zoom & drag it to pan.";
   
   var sourceStyles = {"margin-top": "20px"},
       sourceText = "<h4>Sources</h4><ul><li>Population data from <a href='http://www.citypopulation.de' target='_blank'>Thomas Brinkhoff: Major Agglomerations of the World</a>.</li><li>Data geocoded using the <a href='https://developers.google.com/maps/documentation/geocoding/intro' target='_blank'>google maps API</a> via <a href='https://github.com/dkahle/ggmap' target='_blank'>ggmap</a></li><li><a href='http://bl.ocks.org/mbostock/4180634' target='_blank'>Country borders topojson</a> by Mike Bostock</li></ul>";
